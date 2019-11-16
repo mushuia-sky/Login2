@@ -48,7 +48,6 @@ public class Main3Activity extends AppCompatActivity {
                         .build();
                 try {
                     //diyi
-                    Log.d("132","123");
                     Response response=okHttpClient.newCall(request).execute();
                     html=response.body().string();
                     System.out.println(html);
