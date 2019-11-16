@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 import android.widget.TextView;
 
 import com.example.login.R;
@@ -46,6 +47,8 @@ public class Main3Activity extends AppCompatActivity {
                         .url("http://www.qushuba.com/shu502/4885842.html")
                         .build();
                 try {
+                    //diyi
+                    Log.d("132","123");
                     Response response=okHttpClient.newCall(request).execute();
                     html=response.body().string();
                     System.out.println(html);
